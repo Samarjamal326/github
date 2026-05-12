@@ -13,3 +13,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** Use `clamp(min, preferred, max)` for fluid typography — e.g., `font-size: clamp(1rem, 2.5vw, 2rem)` scales smoothly across screen sizes.
 
 ---
+
+### 🗓️ 2026-05-12
+
+> 💡 **CSS:** Use `clamp(min, preferred, max)` for fluid typography — e.g., `font-size: clamp(1rem, 2.5vw, 2rem)` scales smoothly across screen sizes.
+
+---
