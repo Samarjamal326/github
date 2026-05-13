@@ -2,8 +2,10 @@ name: Daily Web Dev Tip
 
 on:
   schedule:
-    - cron: '30 18 * * *'  # Every day at 12:00 AM IST (6:30 PM UTC)
-  workflow_dispatch:        # Run manually anytime from GitHub Actions tab
+    # Runs twice a day
+    - cron: '0 6 * * *'   # 11:30 AM IST
+    - cron: '0 18 * * *'  # 11:30 PM IST
+  workflow_dispatch:
 
 jobs:
   add-tip:
@@ -29,33 +31,12 @@ jobs:
             "**JavaScript:** Arrow functions don't have their own \`this\` — they inherit it from the surrounding scope. This makes them ideal for callbacks."
             "**HTML:** Use \`<label for='inputId'>\` to link labels to inputs — clicking the label will focus the input, improving usability."
             "**CSS:** \`box-sizing: border-box\` makes width calculations intuitive — padding and border are included in the element's total width."
-            "**JavaScript:** \`localStorage\` stores data with no expiry. \`sessionStorage\` clears when the tab is closed. Choose based on your use case."
-            "**CSS:** Use \`clamp(min, preferred, max)\` for fluid typography — e.g., \`font-size: clamp(1rem, 2.5vw, 2rem)\` scales smoothly across screen sizes."
-            "**JavaScript:** \`Array.map()\` returns a new array. \`Array.forEach()\` returns nothing. Use map when you need the result, forEach when you don't."
-            "**HTML:** The \`<meta name='viewport' content='width=device-width, initial-scale=1'>\` tag is essential for responsive design on mobile devices."
-            "**CSS:** \`z-index\` only works on elements with a \`position\` value other than \`static\`. Setting z-index on a static element does nothing."
-            "**JavaScript:** Use \`console.table()\` instead of \`console.log()\` for arrays and objects — it displays them in a clean, readable table format."
-            "**CSS:** The \`transition\` property animates changes smoothly. Example: \`transition: all 0.3s ease;\` will animate any property change over 300ms."
-            "**JavaScript:** \`querySelector\` returns the first match. \`querySelectorAll\` returns all matches as a NodeList. Use \`Array.from()\` to convert it to an array."
-            "**HTML:** Use \`<button type='button'>\` inside forms to prevent accidental form submission — the default type for buttons inside a form is \`submit\`."
-            "**CSS:** Use \`gap\` in Flexbox and Grid instead of margins between items — it's cleaner and doesn't add extra space on the edges."
-            "**JavaScript:** \`setTimeout(fn, 0)\` doesn't run immediately — it queues the function after the current call stack is clear. Useful for deferring work."
-            "**CSS:** \`overflow: hidden\` on a parent is a quick way to clear floats — though using Flexbox or Grid is generally the modern approach."
-            "**JavaScript:** Destructuring makes code cleaner: \`const { name, age } = person;\` instead of \`const name = person.name; const age = person.age;\`"
-            "**HTML:** The \`required\`, \`minlength\`, \`maxlength\`, and \`pattern\` attributes give you basic form validation without writing any JavaScript."
-            "**CSS:** \`display: none\` removes an element from the layout entirely. \`visibility: hidden\` hides it but keeps the space it occupied."
-            "**JavaScript:** The spread operator \`...\` is great for copying arrays/objects: \`const newArr = [...oldArr, newItem];\` without mutating the original."
-            "**CSS:** Avoid using \`!important\` unless absolutely necessary — it breaks the natural cascade and makes debugging styles much harder."
-            "**JavaScript:** Use \`template literals\` (backticks) for strings with variables: \`Hello, \${name}!\` is much cleaner than \`'Hello, ' + name + '!'\`"
-            "**HTML:** Group related form fields inside a \`<fieldset>\` with a \`<legend>\` — it improves structure, accessibility, and visual clarity."
-            "**CSS:** Media queries let you apply styles at specific screen sizes: \`@media (max-width: 768px) { ... }\` targets tablets and smaller devices."
           )
 
-          # Pick tip based on day of year so it cycles through the list
-          DAY_OF_YEAR=$(date +%j | sed 's/^0*//')
-          INDEX=$(( (DAY_OF_YEAR - 1) % ${#TIPS[@]} ))
+          # Pick tip based on current timestamp
+          INDEX=$(( $(date +%s) % ${#TIPS[@]} ))
           TIP="${TIPS[$INDEX]}"
-          DATE=$(date +"%Y-%m-%d")
+          DATE=$(date +"%Y-%m-%d %H:%M:%S")
 
           echo "" >> README.md
           echo "### 🗓️ $DATE" >> README.md
@@ -69,5 +50,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "💡 Daily web dev tip — $(date +%Y-%m-%d)"
+          git commit -m "💡 Web dev tip update — $(date +%Y-%m-%d_%H-%M-%S)"
           git push
