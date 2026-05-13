@@ -31,3 +31,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** Always use semantic tags like <article>, <section>, <nav>, and <footer> instead of generic <div>s — it improves accessibility and SEO.
 
 ---
+
+### 🗓️ 2026-05-13 19:54:49
+
+> 💡 **CSS:** `box-sizing: border-box` makes width calculations intuitive — padding and border are included in the element's total width.
+
+---
