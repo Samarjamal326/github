@@ -37,3 +37,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** `box-sizing: border-box` makes width calculations intuitive — padding and border are included in the element's total width.
 
 ---
+
+### 🗓️ 2026-05-14 08:35:30
+
+> 💡 **HTML:** Always use semantic tags like <article>, <section>, <nav>, and <footer> instead of generic <div>s — it improves accessibility and SEO.
+
+---
