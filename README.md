@@ -43,3 +43,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** Always use semantic tags like <article>, <section>, <nav>, and <footer> instead of generic <div>s — it improves accessibility and SEO.
 
 ---
+
+### 🗓️ 2026-05-14 19:45:51
+
+> 💡 **CSS:** Use CSS custom properties (variables) like `--primary-color: #3498db` to keep your styles consistent and easy to update.
+
+---
