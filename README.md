@@ -55,3 +55,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** Use `<label for='inputId'>` to link labels to inputs — clicking the label will focus the input, improving usability.
 
 ---
+
+### 🗓️ 2026-05-15 19:38:54
+
+> 💡 **HTML:** The `alt` attribute on images isn't optional — it's critical for screen readers and is displayed when the image fails to load.
+
+---
