@@ -49,3 +49,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** Use CSS custom properties (variables) like `--primary-color: #3498db` to keep your styles consistent and easy to update.
 
 ---
+
+### 🗓️ 2026-05-15 08:46:48
+
+> 💡 **HTML:** Use `<label for='inputId'>` to link labels to inputs — clicking the label will focus the input, improving usability.
+
+---
