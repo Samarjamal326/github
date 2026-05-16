@@ -61,3 +61,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** The `alt` attribute on images isn't optional — it's critical for screen readers and is displayed when the image fails to load.
 
 ---
+
+### 🗓️ 2026-05-16 08:01:35
+
+> 💡 **JavaScript:** Use `===` (strict equality) instead of `==` (loose equality) to avoid unexpected type coercion bugs.
+
+---
