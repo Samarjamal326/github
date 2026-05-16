@@ -67,3 +67,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **JavaScript:** Use `===` (strict equality) instead of `==` (loose equality) to avoid unexpected type coercion bugs.
 
 ---
+
+### 🗓️ 2026-05-16 19:04:57
+
+> 💡 **JavaScript:** Arrow functions don't have their own `this` — they inherit it from the surrounding scope. This makes them ideal for callbacks.
+
+---
