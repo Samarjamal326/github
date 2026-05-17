@@ -73,3 +73,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **JavaScript:** Arrow functions don't have their own `this` — they inherit it from the surrounding scope. This makes them ideal for callbacks.
 
 ---
+
+### 🗓️ 2026-05-17 08:19:03
+
+> 💡 **CSS:** `Flexbox` is best for 1D layouts (rows or columns). Use `CSS Grid` when you need control over both rows and columns at the same time.
+
+---
