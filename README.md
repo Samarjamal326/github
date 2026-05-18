@@ -85,3 +85,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** Always use semantic tags like <article>, <section>, <nav>, and <footer> instead of generic <div>s — it improves accessibility and SEO.
 
 ---
+
+### 🗓️ 2026-05-18 09:58:43
+
+> 💡 **CSS:** `Flexbox` is best for 1D layouts (rows or columns). Use `CSS Grid` when you need control over both rows and columns at the same time.
+
+---
