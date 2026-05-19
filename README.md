@@ -103,3 +103,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **JavaScript:** `const` doesn't mean the value is immutable — for objects and arrays, the contents can still change. Use `Object.freeze()` if you truly want immutability.
 
 ---
+
+### 🗓️ 2026-05-19 19:51:43
+
+> 💡 **CSS:** `Flexbox` is best for 1D layouts (rows or columns). Use `CSS Grid` when you need control over both rows and columns at the same time.
+
+---
