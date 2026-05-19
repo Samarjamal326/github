@@ -97,3 +97,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** `position: sticky` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks.
 
 ---
+
+### 🗓️ 2026-05-19 09:39:02
+
+> 💡 **JavaScript:** `const` doesn't mean the value is immutable — for objects and arrays, the contents can still change. Use `Object.freeze()` if you truly want immutability.
+
+---
