@@ -109,3 +109,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** `Flexbox` is best for 1D layouts (rows or columns). Use `CSS Grid` when you need control over both rows and columns at the same time.
 
 ---
+
+### 🗓️ 2026-05-20 09:28:31
+
+> 💡 **CSS:** Use CSS custom properties (variables) like `--primary-color: #3498db` to keep your styles consistent and easy to update.
+
+---
