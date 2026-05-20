@@ -115,3 +115,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** Use CSS custom properties (variables) like `--primary-color: #3498db` to keep your styles consistent and easy to update.
 
 ---
+
+### 🗓️ 2026-05-20 20:14:12
+
+> 💡 **JavaScript:** `const` doesn't mean the value is immutable — for objects and arrays, the contents can still change. Use `Object.freeze()` if you truly want immutability.
+
+---
