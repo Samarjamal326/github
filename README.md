@@ -139,3 +139,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** `position: sticky` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks.
 
 ---
+
+### 🗓️ 2026-05-22 19:44:56
+
+> 💡 **CSS:** `position: sticky` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks.
+
+---
