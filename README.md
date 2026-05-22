@@ -133,3 +133,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **HTML:** The `alt` attribute on images isn't optional — it's critical for screen readers and is displayed when the image fails to load.
 
 ---
+
+### 🗓️ 2026-05-22 08:58:16
+
+> 💡 **CSS:** `position: sticky` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks.
+
+---
