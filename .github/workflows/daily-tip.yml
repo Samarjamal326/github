@@ -1,12 +1,19 @@
-name: Daily Dev & AI Tip
+name: Smart Daily Dev & AI Tips
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
-    # 11:30 AM IST
-    - cron: '0 6 * * *'
 
-    # 11:30 PM IST
-    - cron: '0 18 * * *'
+    # Multiple random-like execution windows
+    # GitHub cron uses UTC
+
+    - cron: '13 4 * * *'
+    - cron: '47 6 * * *'
+    - cron: '21 9 * * *'
+    - cron: '3 13 * * *'
+    - cron: '39 17 * * *'
 
   workflow_dispatch:
 
@@ -19,15 +26,39 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configure Git
         run: |
           git config --global user.name "Samarjamal326"
           git config --global user.email "samarjamal326@gmail.com"
 
-      - name: Generate Daily Tip
+      - name: Random Commit Decision
+        id: commitcheck
         run: |
+          python << 'EOF'
+          import random
+
+          # Probability of committing
+          # Creates natural-looking activity
+
+          number = random.randint(1, 100)
+
+          # Around 65% chance to commit
+          if number <= 65:
+              with open("commit_status.txt", "w") as f:
+                  f.write("yes")
+          else:
+              with open("commit_status.txt", "w") as f:
+                  f.write("no")
+
+          print("Decision generated.")
+          EOF
+
+      - name: Generate README Update
+        run: |
+          if [ "$(cat commit_status.txt)" = "yes" ]; then
+
           python << 'EOF'
           import random
           from datetime import datetime
@@ -35,138 +66,126 @@ jobs:
           tips = [
 
               # HTML
-              "HTML: Use semantic tags like <header>, <section>, <article>, and <footer> for better SEO and accessibility.",
-
-              "HTML: Always add alt text to images for accessibility and screen readers.",
-
-              "HTML: Use lazy loading with loading='lazy' to improve website performance.",
+              "HTML: Semantic tags improve SEO and accessibility.",
+              "HTML: Use loading='lazy' for better image performance.",
+              "HTML: Always include alt attributes in images.",
+              "HTML: Meta tags improve discoverability.",
 
               # CSS
-              "CSS: Flexbox is ideal for 1D layouts while CSS Grid is best for 2D layouts.",
-
-              "CSS: Use rem instead of px for better responsive typography.",
-
-              "CSS: Avoid using !important frequently — improve selector specificity instead.",
-
-              "CSS: Use media queries to create responsive layouts for mobile devices.",
+              "CSS: Grid is powerful for 2D layouts.",
+              "CSS: Flexbox simplifies alignment problems.",
+              "CSS: rem units improve responsive design.",
+              "CSS: Avoid excessive nesting in stylesheets.",
+              "CSS: Media queries help create mobile-first layouts.",
 
               # JavaScript
-              "JavaScript: Arrow functions inherit 'this' from their surrounding scope.",
-
-              "JavaScript: Debouncing improves performance for search bars and resize events.",
-
-              "JavaScript: Use async/await instead of nested promises for cleaner asynchronous code.",
-
-              "JavaScript: Event delegation improves performance when handling many child elements.",
-
-              "JavaScript: const prevents reassignment while let allows mutable variables.",
+              "JavaScript: Closures retain access to outer scope variables.",
+              "JavaScript: Debouncing prevents excessive function calls.",
+              "JavaScript: async/await improves readability.",
+              "JavaScript: Event delegation boosts performance.",
+              "JavaScript: Destructuring simplifies object handling.",
+              "JavaScript: Spread operators make copying arrays easier.",
 
               # React
-              "React: Components should be small, reusable, and focused on one responsibility.",
+              "React: Components should remain reusable and modular.",
+              "React: useEffect handles side effects.",
+              "React: Keys help React identify changed list items.",
+              "React: State updates are asynchronous.",
+              "React: Virtual DOM improves rendering efficiency.",
 
-              "React: The Virtual DOM improves rendering performance by minimizing real DOM updates.",
-
-              "React: useEffect is commonly used for API calls and side effects.",
-
-              "React: Props are read-only inputs passed from parent to child components.",
-
-              "React: State updates are asynchronous in React.",
-
-              # Node.js
-              "Node.js: Express.js is one of the most popular backend frameworks for Node.",
-
-              "Node.js: Middleware functions execute during the request-response cycle.",
-
-              "Node.js: Environment variables should store sensitive credentials securely.",
+              # Backend
+              "Node.js: Middleware executes during request lifecycles.",
+              "Express.js: Route parameters simplify APIs.",
+              "REST APIs should use meaningful HTTP methods.",
+              "JWT tokens help implement stateless authentication.",
 
               # Databases
-              "SQL: Use indexing to improve query performance on large datasets.",
+              "SQL indexing improves query speed.",
+              "MongoDB stores data in flexible BSON documents.",
+              "Normalization reduces redundancy in SQL databases.",
+              "Database caching improves application performance.",
 
-              "SQL: INNER JOIN returns matching records from both tables.",
-
-              "MongoDB: Documents are stored in BSON format.",
-
-              # Git & GitHub
-              "Git: Commit messages should be short, meaningful, and action-oriented.",
-
-              "GitHub: A consistent contribution graph improves your developer profile visibility.",
-
-              "Git: Branching allows safe feature development without affecting production code.",
+              # Git
+              "Git commits should be small and meaningful.",
+              "Rebasing keeps commit history cleaner.",
+              "Branches isolate experimental features safely.",
+              "README files are critical for project presentation.",
 
               # DSA
-              "DSA: Binary Search works only on sorted arrays.",
-
-              "DSA: HashMaps provide average O(1) lookup complexity.",
-
-              "DSA: Merge Sort has O(n log n) time complexity.",
-
-              "DSA: Stacks follow the Last In First Out (LIFO) principle.",
+              "Binary Search requires sorted arrays.",
+              "HashMaps provide near O(1) lookups.",
+              "Stacks use LIFO ordering.",
+              "Queues use FIFO ordering.",
+              "Merge Sort runs in O(n log n).",
 
               # Python
-              "Python: List comprehensions make code shorter and more readable.",
+              "Python generators improve memory efficiency.",
+              "Virtual environments isolate dependencies.",
+              "List comprehensions reduce boilerplate code.",
+              "Dictionaries provide fast key-value access.",
 
-              "Python: Virtual environments isolate project dependencies.",
-
-              "Python: Generators save memory by yielding values lazily.",
-
-              # AI/ML
-              "Machine Learning: Overfitting occurs when a model memorizes training data instead of generalizing.",
-
-              "Machine Learning: Feature scaling improves gradient descent convergence.",
-
-              "Deep Learning: ReLU activation helps reduce vanishing gradient problems.",
-
-              "Transformers: Attention mechanisms help models focus on important words in sequences.",
-
-              "NLP: Tokenization splits text into smaller processable units.",
-
-              "AI: Data quality is often more important than model complexity.",
-
-              "LLMs: Prompt engineering significantly affects output quality.",
-
-              # Cybersecurity
-              "Cybersecurity: Never store passwords in plain text — always hash them.",
-
-              "Cybersecurity: HTTPS encrypts communication between client and server.",
+              # AI / ML
+              "Feature engineering often matters more than model complexity.",
+              "Overfitting reduces real-world model performance.",
+              "Transformers rely heavily on attention mechanisms.",
+              "ReLU reduces vanishing gradient issues.",
+              "Tokenization is fundamental in NLP pipelines.",
+              "Data quality is crucial in machine learning.",
 
               # DevOps
-              "DevOps: CI/CD automates testing and deployment pipelines.",
+              "Docker ensures environment consistency.",
+              "CI/CD automates deployment workflows.",
+              "Monitoring helps detect failures early.",
 
-              "Docker: Containers ensure applications run consistently across environments.",
+              # Security
+              "Never store passwords in plain text.",
+              "HTTPS encrypts client-server communication.",
+              "Input validation prevents many attacks.",
 
               # General
-              "Programming: Readable code is more valuable than clever code.",
-
-              "Programming: Debugging skills are often more important than writing code quickly.",
-
-              "Software Engineering: Consistency in coding style improves maintainability.",
-
-              "Problem Solving: Break complex problems into smaller manageable parts."
+              "Readable code scales better in teams.",
+              "Debugging is a critical engineering skill.",
+              "Consistency improves maintainability.",
+              "Optimization should follow correctness."
           ]
 
+          emojis = ["🚀", "💡", "🔥", "⚡", "🧠", "📘", "💻"]
+
           selected_tip = random.choice(tips)
+          selected_emoji = random.choice(emojis)
 
           timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-          entry = f'''
+          entry = f"""
+
           ---
 
-          ## 📅 {timestamp}
+          ## {selected_emoji} {timestamp}
 
-          > 💡 {selected_tip}
+          > {selected_tip}
 
-          '''
+          """
 
           with open("README.md", "a", encoding="utf-8") as file:
               file.write(entry)
 
-          print("README updated successfully.")
+          print("README updated.")
           EOF
 
-      - name: Commit and Push Changes
+          else
+            echo "Skipping commit this run."
+          fi
+
+      - name: Commit Changes
         run: |
-          git add README.md
+          if [ "$(cat commit_status.txt)" = "yes" ]; then
 
-          git diff --staged --quiet || git commit -m "📘 Daily Dev Tip Update"
+            git add README.md
 
-          git push
+            git diff --staged --quiet || git commit -m "📘 Smart Daily Update"
+
+            git push
+
+          else
+            echo "No commit this run."
+          fi
