@@ -145,3 +145,10 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 > 💡 **CSS:** `position: sticky` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks.
 
 ---
+
+---
+
+## 📅 2026-05-23 14:47:44
+
+> 💡 Machine Learning: Overfitting occurs when a model memorizes training data instead of generalizing.
+
