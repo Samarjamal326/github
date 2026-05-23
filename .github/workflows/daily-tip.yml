@@ -1,54 +1,172 @@
-name: Daily Web Dev Tip
+name: Daily Dev & AI Tip
 
 on:
   schedule:
-    # Runs twice a day
-    - cron: '0 6 * * *'   # 11:30 AM IST
-    - cron: '0 18 * * *'  # 11:30 PM IST
+    # 11:30 AM IST
+    - cron: '0 6 * * *'
+
+    # 11:30 PM IST
+    - cron: '0 18 * * *'
+
   workflow_dispatch:
 
 jobs:
-  add-tip:
+  update-readme:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Pick and append a daily web dev tip
+      - name: Configure Git
         run: |
-          # Array of web dev tips
-          TIPS=(
-            "**HTML:** Always use semantic tags like <article>, <section>, <nav>, and <footer> instead of generic <div>s — it improves accessibility and SEO."
-            "**CSS:** Use CSS custom properties (variables) like \`--primary-color: #3498db\` to keep your styles consistent and easy to update."
-            "**JavaScript:** \`const\` doesn't mean the value is immutable — for objects and arrays, the contents can still change. Use \`Object.freeze()\` if you truly want immutability."
-            "**CSS:** \`Flexbox\` is best for 1D layouts (rows or columns). Use \`CSS Grid\` when you need control over both rows and columns at the same time."
-            "**HTML:** The \`alt\` attribute on images isn't optional — it's critical for screen readers and is displayed when the image fails to load."
-            "**JavaScript:** Use \`===\` (strict equality) instead of \`==\` (loose equality) to avoid unexpected type coercion bugs."
-            "**CSS:** \`position: sticky\` is a hybrid of relative and fixed — the element stays in the flow until it hits a scroll threshold, then sticks."
-            "**JavaScript:** Arrow functions don't have their own \`this\` — they inherit it from the surrounding scope. This makes them ideal for callbacks."
-            "**HTML:** Use \`<label for='inputId'>\` to link labels to inputs — clicking the label will focus the input, improving usability."
-            "**CSS:** \`box-sizing: border-box\` makes width calculations intuitive — padding and border are included in the element's total width."
-          )
+          git config --global user.name "Samarjamal326"
+          git config --global user.email "samarjamal326@gmail.com"
 
-          # Pick tip based on current timestamp
-          INDEX=$(( $(date +%s) % ${#TIPS[@]} ))
-          TIP="${TIPS[$INDEX]}"
-          DATE=$(date +"%Y-%m-%d %H:%M:%S")
-
-          echo "" >> README.md
-          echo "### 🗓️ $DATE" >> README.md
-          echo "" >> README.md
-          echo "> 💡 $TIP" >> README.md
-          echo "" >> README.md
-          echo "---" >> README.md
-
-      - name: Commit and push tip
+      - name: Generate Daily Tip
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python << 'EOF'
+          import random
+          from datetime import datetime
+
+          tips = [
+
+              # HTML
+              "HTML: Use semantic tags like <header>, <section>, <article>, and <footer> for better SEO and accessibility.",
+
+              "HTML: Always add alt text to images for accessibility and screen readers.",
+
+              "HTML: Use lazy loading with loading='lazy' to improve website performance.",
+
+              # CSS
+              "CSS: Flexbox is ideal for 1D layouts while CSS Grid is best for 2D layouts.",
+
+              "CSS: Use rem instead of px for better responsive typography.",
+
+              "CSS: Avoid using !important frequently — improve selector specificity instead.",
+
+              "CSS: Use media queries to create responsive layouts for mobile devices.",
+
+              # JavaScript
+              "JavaScript: Arrow functions inherit 'this' from their surrounding scope.",
+
+              "JavaScript: Debouncing improves performance for search bars and resize events.",
+
+              "JavaScript: Use async/await instead of nested promises for cleaner asynchronous code.",
+
+              "JavaScript: Event delegation improves performance when handling many child elements.",
+
+              "JavaScript: const prevents reassignment while let allows mutable variables.",
+
+              # React
+              "React: Components should be small, reusable, and focused on one responsibility.",
+
+              "React: The Virtual DOM improves rendering performance by minimizing real DOM updates.",
+
+              "React: useEffect is commonly used for API calls and side effects.",
+
+              "React: Props are read-only inputs passed from parent to child components.",
+
+              "React: State updates are asynchronous in React.",
+
+              # Node.js
+              "Node.js: Express.js is one of the most popular backend frameworks for Node.",
+
+              "Node.js: Middleware functions execute during the request-response cycle.",
+
+              "Node.js: Environment variables should store sensitive credentials securely.",
+
+              # Databases
+              "SQL: Use indexing to improve query performance on large datasets.",
+
+              "SQL: INNER JOIN returns matching records from both tables.",
+
+              "MongoDB: Documents are stored in BSON format.",
+
+              # Git & GitHub
+              "Git: Commit messages should be short, meaningful, and action-oriented.",
+
+              "GitHub: A consistent contribution graph improves your developer profile visibility.",
+
+              "Git: Branching allows safe feature development without affecting production code.",
+
+              # DSA
+              "DSA: Binary Search works only on sorted arrays.",
+
+              "DSA: HashMaps provide average O(1) lookup complexity.",
+
+              "DSA: Merge Sort has O(n log n) time complexity.",
+
+              "DSA: Stacks follow the Last In First Out (LIFO) principle.",
+
+              # Python
+              "Python: List comprehensions make code shorter and more readable.",
+
+              "Python: Virtual environments isolate project dependencies.",
+
+              "Python: Generators save memory by yielding values lazily.",
+
+              # AI/ML
+              "Machine Learning: Overfitting occurs when a model memorizes training data instead of generalizing.",
+
+              "Machine Learning: Feature scaling improves gradient descent convergence.",
+
+              "Deep Learning: ReLU activation helps reduce vanishing gradient problems.",
+
+              "Transformers: Attention mechanisms help models focus on important words in sequences.",
+
+              "NLP: Tokenization splits text into smaller processable units.",
+
+              "AI: Data quality is often more important than model complexity.",
+
+              "LLMs: Prompt engineering significantly affects output quality.",
+
+              # Cybersecurity
+              "Cybersecurity: Never store passwords in plain text — always hash them.",
+
+              "Cybersecurity: HTTPS encrypts communication between client and server.",
+
+              # DevOps
+              "DevOps: CI/CD automates testing and deployment pipelines.",
+
+              "Docker: Containers ensure applications run consistently across environments.",
+
+              # General
+              "Programming: Readable code is more valuable than clever code.",
+
+              "Programming: Debugging skills are often more important than writing code quickly.",
+
+              "Software Engineering: Consistency in coding style improves maintainability.",
+
+              "Problem Solving: Break complex problems into smaller manageable parts."
+          ]
+
+          selected_tip = random.choice(tips)
+
+          timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+          entry = f'''
+          ---
+
+          ## 📅 {timestamp}
+
+          > 💡 {selected_tip}
+
+          '''
+
+          with open("README.md", "a", encoding="utf-8") as file:
+              file.write(entry)
+
+          print("README updated successfully.")
+          EOF
+
+      - name: Commit and Push Changes
+        run: |
           git add README.md
-          git commit -m "💡 Web dev tip update — $(date +%Y-%m-%d_%H-%M-%S)"
+
+          git diff --staged --quiet || git commit -m "📘 Daily Dev Tip Update"
+
           git push
