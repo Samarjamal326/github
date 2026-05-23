@@ -152,3 +152,11 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > 💡 Machine Learning: Overfitting occurs when a model memorizes training data instead of generalizing.
 
+
+
+---
+
+## 💡 2026-05-23 14:56:51
+
+> Binary Search requires sorted arrays.
+
