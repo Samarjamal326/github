@@ -9,7 +9,6 @@ on:
     # Multiple random-like execution windows
     # GitHub cron uses UTC
 
-    - cron: '13 4 * * *'
     - cron: '47 6 * * *'
     - cron: '21 9 * * *'
     - cron: '3 13 * * *'
