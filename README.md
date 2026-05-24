@@ -160,3 +160,11 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Binary Search requires sorted arrays.
 
+
+
+---
+
+## 🚀 2026-05-24 07:29:19
+
+> Never store passwords in plain text.
+
