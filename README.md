@@ -192,3 +192,11 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CI/CD automates deployment workflows.
 
+
+
+---
+
+## 💡 2026-05-25 15:54:36
+
+> Never store passwords in plain text.
+
