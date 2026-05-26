@@ -22,6 +22,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
       - name: Configure Git
@@ -52,72 +53,59 @@ jobs:
           from datetime import datetime
 
           tips = [
-              # HTML
               "HTML: Semantic tags improve SEO and accessibility.",
               "HTML: Use loading='lazy' for better image performance.",
               "HTML: Always include alt attributes in images.",
               "HTML: Meta tags improve discoverability.",
-              # CSS
               "CSS: Grid is powerful for 2D layouts.",
               "CSS: Flexbox simplifies alignment problems.",
               "CSS: rem units improve responsive design.",
               "CSS: Avoid excessive nesting in stylesheets.",
               "CSS: Media queries help create mobile-first layouts.",
-              # JavaScript
               "JavaScript: Closures retain access to outer scope variables.",
               "JavaScript: Debouncing prevents excessive function calls.",
               "JavaScript: async/await improves readability.",
               "JavaScript: Event delegation boosts performance.",
               "JavaScript: Destructuring simplifies object handling.",
               "JavaScript: Spread operators make copying arrays easier.",
-              # React
               "React: Components should remain reusable and modular.",
               "React: useEffect handles side effects.",
               "React: Keys help React identify changed list items.",
               "React: State updates are asynchronous.",
               "React: Virtual DOM improves rendering efficiency.",
-              # Backend
               "Node.js: Middleware executes during request lifecycles.",
               "Express.js: Route parameters simplify APIs.",
               "REST APIs should use meaningful HTTP methods.",
               "JWT tokens help implement stateless authentication.",
-              # Databases
               "SQL indexing improves query speed.",
               "MongoDB stores data in flexible BSON documents.",
               "Normalization reduces redundancy in SQL databases.",
               "Database caching improves application performance.",
-              # Git
               "Git commits should be small and meaningful.",
               "Rebasing keeps commit history cleaner.",
               "Branches isolate experimental features safely.",
               "README files are critical for project presentation.",
-              # DSA
               "Binary Search requires sorted arrays.",
               "HashMaps provide near O(1) lookups.",
               "Stacks use LIFO ordering.",
               "Queues use FIFO ordering.",
               "Merge Sort runs in O(n log n).",
-              # Python
               "Python generators improve memory efficiency.",
               "Virtual environments isolate dependencies.",
               "List comprehensions reduce boilerplate code.",
               "Dictionaries provide fast key-value access.",
-              # AI / ML
               "Feature engineering often matters more than model complexity.",
               "Overfitting reduces real-world model performance.",
               "Transformers rely heavily on attention mechanisms.",
               "ReLU reduces vanishing gradient issues.",
               "Tokenization is fundamental in NLP pipelines.",
               "Data quality is crucial in machine learning.",
-              # DevOps
               "Docker ensures environment consistency.",
               "CI/CD automates deployment workflows.",
               "Monitoring helps detect failures early.",
-              # Security
               "Never store passwords in plain text.",
               "HTTPS encrypts client-server communication.",
               "Input validation prevents many attacks.",
-              # General
               "Readable code scales better in teams.",
               "Debugging is a critical engineering skill.",
               "Consistency improves maintainability.",
@@ -125,18 +113,11 @@ jobs:
           ]
 
           emojis = ["🚀", "💡", "🔥", "⚡", "🧠", "📘", "💻"]
-
           selected_tip = random.choice(tips)
           selected_emoji = random.choice(emojis)
           timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-          entry = f"""
-          ---
-          ## {selected_emoji} {timestamp}
-
-          > {selected_tip}
-
-          """
+          entry = f"\n---\n## {selected_emoji} {timestamp}\n\n> {selected_tip}\n\n"
 
           with open("README.md", "a", encoding="utf-8") as file:
               file.write(entry)
