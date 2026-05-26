@@ -220,3 +220,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Feature engineering often matters more than model complexity.
 
+
+---
+## 📘 2026-05-26 19:37:19
+
+> Merge Sort runs in O(n log n).
+
