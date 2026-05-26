@@ -214,3 +214,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Data quality is crucial in machine learning.
 
+
+---
+## 🧠 2026-05-26 13:24:35
+
+> Feature engineering often matters more than model complexity.
+
