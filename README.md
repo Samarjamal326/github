@@ -226,3 +226,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Merge Sort runs in O(n log n).
 
+
+---
+## 🔥 2026-05-27 12:38:12
+
+> CSS: rem units improve responsive design.
+
