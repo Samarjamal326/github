@@ -250,3 +250,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Semantic tags improve SEO and accessibility.
 
+
+---
+## 📘 2026-05-28 19:59:16
+
+> ReLU reduces vanishing gradient issues.
+
