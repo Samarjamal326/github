@@ -238,3 +238,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Monitoring helps detect failures early.
 
+
+---
+## 🚀 2026-05-28 10:42:18
+
+> React: Keys help React identify changed list items.
+
