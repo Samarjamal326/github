@@ -244,3 +244,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: Keys help React identify changed list items.
 
+
+---
+## 📘 2026-05-28 17:00:21
+
+> HTML: Semantic tags improve SEO and accessibility.
+
