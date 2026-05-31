@@ -292,3 +292,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Git commits should be small and meaningful.
 
+
+---
+## 📘 2026-05-31 09:37:35
+
+> Stacks use LIFO ordering.
+
