@@ -334,3 +334,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > API: Rate limiting prevents abuse of your services.
 
+
+---
+## 2026-06-01 18:45:29
+
+> Web: Minify your CSS and JS for faster load times.
+
