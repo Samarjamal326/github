@@ -328,3 +328,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Queues use FIFO ordering.
 
+
+---
+## 2026-06-01 18:14:10
+
+> API: Rate limiting prevents abuse of your services.
+
