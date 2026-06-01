@@ -310,3 +310,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Merge Sort runs in O(n log n).
 
+
+---
+## 💡 2026-06-01 15:34:20
+
+> Branches isolate experimental features safely.
+
