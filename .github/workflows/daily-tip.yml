@@ -30,113 +30,114 @@ jobs:
           git config --global user.name "Samarjamal326"
           git config --global user.email "samarjamal326@gmail.com"
 
-      - name: Random Commit Decision
-        id: commitcheck
-        run: |
-          python3 << 'EOF'
-          import random
-          # Randomly decide number of commits between 0 and 5
-          # Weights make 0, 1, 2, 3 more common, and 4, 5 less common for a realistic heatmap
-          num_commits = random.choices([0, 1, 2, 3, 4, 5], weights=[25, 20, 25, 15, 10, 5])[0]
-          with open("num_commits.txt", "w") as f:
-              f.write(str(num_commits))
-          print(f"Decision generated: {num_commits} commits for this run.")
-          EOF
-
       - name: Generate and Commit Changes
+        shell: python
         run: |
-          NUM_COMMITS=$(cat num_commits.txt)
-          if [ "$NUM_COMMITS" -gt 0 ]; then
-            for i in $(seq 1 $NUM_COMMITS); do
-              python3 << 'EOF'
-              import random
-              from datetime import datetime
+          import random
+          import os
+          import time
+          from datetime import datetime
 
-              tips = [
-                  "HTML: Semantic tags improve SEO and accessibility.",
-                  "HTML: Use loading='lazy' for better image performance.",
-                  "HTML: Always include alt attributes in images.",
-                  "HTML: Meta tags improve discoverability.",
-                  "CSS: Grid is powerful for 2D layouts.",
-                  "CSS: Flexbox simplifies alignment problems.",
-                  "CSS: rem units improve responsive design.",
-                  "CSS: Avoid excessive nesting in stylesheets.",
-                  "CSS: Media queries help create mobile-first layouts.",
-                  "JavaScript: Closures retain access to outer scope variables.",
-                  "JavaScript: Debouncing prevents excessive function calls.",
-                  "JavaScript: async/await improves readability.",
-                  "JavaScript: Event delegation boosts performance.",
-                  "JavaScript: Destructuring simplifies object handling.",
-                  "JavaScript: Spread operators make copying arrays easier.",
-                  "React: Components should remain reusable and modular.",
-                  "React: useEffect handles side effects.",
-                  "React: Keys help React identify changed list items.",
-                  "React: State updates are asynchronous.",
-                  "React: Virtual DOM improves rendering efficiency.",
-                  "Node.js: Middleware executes during request lifecycles.",
-                  "Express.js: Route parameters simplify APIs.",
-                  "REST APIs should use meaningful HTTP methods.",
-                  "JWT tokens help implement stateless authentication.",
-                  "SQL indexing improves query speed.",
-                  "MongoDB stores data in flexible BSON documents.",
-                  "Normalization reduces redundancy in SQL databases.",
-                  "Database caching improves application performance.",
-                  "Git commits should be small and meaningful.",
-                  "Rebasing keeps commit history cleaner.",
-                  "Branches isolate experimental features safely.",
-                  "README files are critical for project presentation.",
-                  "Binary Search requires sorted arrays.",
-                  "HashMaps provide near O(1) lookups.",
-                  "Stacks use LIFO ordering.",
-                  "Queues use FIFO ordering.",
-                  "Merge Sort runs in O(n log n).",
-                  "Python generators improve memory efficiency.",
-                  "Virtual environments isolate dependencies.",
-                  "List comprehensions reduce boilerplate code.",
-                  "Dictionaries provide fast key-value access.",
-                  "Feature engineering often matters more than model complexity.",
-                  "Overfitting reduces real-world model performance.",
-                  "Transformers rely heavily on attention mechanisms.",
-                  "ReLU reduces vanishing gradient issues.",
-                  "Tokenization is fundamental in NLP pipelines.",
-                  "Data quality is crucial in machine learning.",
-                  "Docker ensures environment consistency.",
-                  "CI/CD automates deployment workflows.",
-                  "Monitoring helps detect failures early.",
-                  "Never store passwords in plain text.",
-                  "HTTPS encrypts client-server communication.",
-                  "Input validation prevents many attacks.",
-                  "Readable code scales better in teams.",
-                  "Debugging is a critical engineering skill.",
-                  "Consistency improves maintainability.",
-                  "Optimization should follow correctness.",
-                  "Bash: Use 'set -e' to stop a script on errors.",
-                  "Cloud: AWS S3 is ideal for static object storage.",
-                  "TypeScript: Interfaces improve code predictability.",
-                  "API: Rate limiting prevents abuse of your services.",
-                  "Linux: 'grep' is incredibly powerful for text search.",
-                  "Security: Keep dependencies updated to avoid vulnerabilities.",
-                  "UI/UX: Consistent spacing makes apps feel more professional.",
-                  "Web: Minify your CSS and JS for faster load times."
-              ]
+          # Randomly decide number of commits. 
+          # Weights bias it slightly towards 1-3 commits, but 4 and 5 are possible.
+          num_commits = random.choices([0, 1, 2, 3, 4, 5], weights=[25, 25, 20, 15, 10, 5])[0]
+          print(f"Decision: {num_commits} commits for this run.")
 
+          if num_commits == 0:
+              print("Skipping commit this run (0 selected).")
+              exit(0)
+
+          tips = [
+              "HTML: Semantic tags improve SEO and accessibility.",
+              "HTML: Use loading='lazy' for better image performance.",
+              "HTML: Always include alt attributes in images.",
+              "HTML: Meta tags improve discoverability.",
+              "CSS: Grid is powerful for 2D layouts.",
+              "CSS: Flexbox simplifies alignment problems.",
+              "CSS: rem units improve responsive design.",
+              "CSS: Avoid excessive nesting in stylesheets.",
+              "CSS: Media queries help create mobile-first layouts.",
+              "JavaScript: Closures retain access to outer scope variables.",
+              "JavaScript: Debouncing prevents excessive function calls.",
+              "JavaScript: async/await improves readability.",
+              "JavaScript: Event delegation boosts performance.",
+              "JavaScript: Destructuring simplifies object handling.",
+              "JavaScript: Spread operators make copying arrays easier.",
+              "React: Components should remain reusable and modular.",
+              "React: useEffect handles side effects.",
+              "React: Keys help React identify changed list items.",
+              "React: State updates are asynchronous.",
+              "React: Virtual DOM improves rendering efficiency.",
+              "Node.js: Middleware executes during request lifecycles.",
+              "Express.js: Route parameters simplify APIs.",
+              "REST APIs should use meaningful HTTP methods.",
+              "JWT tokens help implement stateless authentication.",
+              "SQL indexing improves query speed.",
+              "MongoDB stores data in flexible BSON documents.",
+              "Normalization reduces redundancy in SQL databases.",
+              "Database caching improves application performance.",
+              "Git commits should be small and meaningful.",
+              "Rebasing keeps commit history cleaner.",
+              "Branches isolate experimental features safely.",
+              "README files are critical for project presentation.",
+              "Binary Search requires sorted arrays.",
+              "HashMaps provide near O(1) lookups.",
+              "Stacks use LIFO ordering.",
+              "Queues use FIFO ordering.",
+              "Merge Sort runs in O(n log n).",
+              "Python generators improve memory efficiency.",
+              "Virtual environments isolate dependencies.",
+              "List comprehensions reduce boilerplate code.",
+              "Dictionaries provide fast key-value access.",
+              "Feature engineering often matters more than model complexity.",
+              "Overfitting reduces real-world model performance.",
+              "Transformers rely heavily on attention mechanisms.",
+              "ReLU reduces vanishing gradient issues.",
+              "Tokenization is fundamental in NLP pipelines.",
+              "Data quality is crucial in machine learning.",
+              "Docker ensures environment consistency.",
+              "CI/CD automates deployment workflows.",
+              "Monitoring helps detect failures early.",
+              "Never store passwords in plain text.",
+              "HTTPS encrypts client-server communication.",
+              "Input validation prevents many attacks.",
+              "Readable code scales better in teams.",
+              "Debugging is a critical engineering skill.",
+              "Consistency improves maintainability.",
+              "Optimization should follow correctness.",
+              "Bash: Use 'set -e' to stop a script on errors.",
+              "Cloud: AWS S3 is ideal for static object storage.",
+              "TypeScript: Interfaces improve code predictability.",
+              "API: Rate limiting prevents abuse of your services.",
+              "Linux: 'grep' is incredibly powerful for text search.",
+              "Security: Keep dependencies updated to avoid vulnerabilities.",
+              "UI/UX: Consistent spacing makes apps feel more professional.",
+              "Web: Minify your CSS and JS for faster load times."
+          ]
+
+          for i in range(num_commits):
               selected_tip = random.choice(tips)
               timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
+              
               entry = f"\n---\n## {timestamp}\n\n> {selected_tip}\n\n"
-
+              
               with open("README.md", "a", encoding="utf-8") as file:
                   file.write(entry)
+              
+              print(f"Commit {i+1}/{num_commits}: Appended tip to README.")
+              
+              # Execute Git commands directly from Python
+              os.system("git add README.md")
+              os.system('git commit -m "Smart Daily Update"')
+              
+              # Sleep briefly to ensure unique commit timestamps
+              time.sleep(2)
 
-              print("Appended tip to README.")
-              EOF
-
-              git add README.md
-              git commit -m "Smart Daily Update"
-              sleep 2 # Small pause ensures unique commit timestamps if execution is too fast
-            done
-            git push origin HEAD:main
-            echo "Successfully pushed $NUM_COMMITS commits."
-          else
-            echo "Skipping commit this run (0 commits selected)."
-          fi
+          print("Pushing all commits to GitHub...")
+          push_status = os.system("git push origin HEAD:main")
+          
+          if push_status != 0:
+              print("Failed to push commits.")
+              exit(1)
+          else:
+              print("Successfully pushed all commits!")
