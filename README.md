@@ -322,3 +322,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Flexbox simplifies alignment problems.
 
+
+---
+## 2026-06-01 18:14:08
+
+> Queues use FIFO ordering.
+
