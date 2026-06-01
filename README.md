@@ -304,3 +304,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > README files are critical for project presentation.
 
+
+---
+## 💡 2026-06-01 12:23:57
+
+> Merge Sort runs in O(n log n).
+
