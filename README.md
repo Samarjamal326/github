@@ -346,3 +346,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Debugging is a critical engineering skill.
 
+
+---
+## 2026-06-01 21:17:08
+
+> REST APIs should use meaningful HTTP methods.
+
