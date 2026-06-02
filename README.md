@@ -364,3 +364,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CI/CD automates deployment workflows.
 
+
+---
+## 2026-06-02 17:48:01
+
+> ReLU reduces vanishing gradient issues.
+
