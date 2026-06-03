@@ -376,3 +376,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Semantic tags improve SEO and accessibility.
 
+
+---
+## 2026-06-03 11:32:19
+
+> List comprehensions reduce boilerplate code.
+
