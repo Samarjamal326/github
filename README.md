@@ -400,3 +400,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > TypeScript: Interfaces improve code predictability.
 
+
+---
+## 2026-06-03 11:32:27
+
+> Web: Minify your CSS and JS for faster load times.
+
