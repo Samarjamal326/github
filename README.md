@@ -412,3 +412,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Git commits should be small and meaningful.
 
+
+---
+## 2026-06-03 18:02:58
+
+> Express.js: Route parameters simplify APIs.
+
