@@ -388,3 +388,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > JavaScript: Closures retain access to outer scope variables.
 
+
+---
+## 2026-06-03 11:32:23
+
+> Python generators improve memory efficiency.
+
