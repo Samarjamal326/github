@@ -424,3 +424,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Debugging is a critical engineering skill.
 
+
+---
+## 2026-06-03 20:41:25
+
+> Never store passwords in plain text.
+
