@@ -382,3 +382,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > List comprehensions reduce boilerplate code.
 
+
+---
+## 2026-06-03 11:32:21
+
+> JavaScript: Closures retain access to outer scope variables.
+
