@@ -430,3 +430,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Never store passwords in plain text.
 
+
+---
+## 2026-06-04 16:27:37
+
+> ReLU reduces vanishing gradient issues.
+
