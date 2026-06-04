@@ -436,3 +436,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > ReLU reduces vanishing gradient issues.
 
+
+---
+## 2026-06-04 19:46:53
+
+> Optimization should follow correctness.
+
