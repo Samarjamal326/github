@@ -448,3 +448,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Always include alt attributes in images.
 
+
+---
+## 2026-06-05 10:37:40
+
+> CSS: Flexbox simplifies alignment problems.
+
