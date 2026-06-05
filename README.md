@@ -484,3 +484,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Web: Minify your CSS and JS for faster load times.
 
+
+---
+## 2026-06-05 19:22:45
+
+> HTML: Use loading='lazy' for better image performance.
+
