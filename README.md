@@ -442,3 +442,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Optimization should follow correctness.
 
+
+---
+## 2026-06-05 10:37:38
+
+> HTML: Always include alt attributes in images.
+
