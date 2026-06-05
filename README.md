@@ -466,3 +466,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Optimization should follow correctness.
 
+
+---
+## 2026-06-05 12:21:06
+
+> Virtual environments isolate dependencies.
+
