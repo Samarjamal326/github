@@ -478,3 +478,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Data quality is crucial in machine learning.
 
+
+---
+## 2026-06-05 19:22:43
+
+> Web: Minify your CSS and JS for faster load times.
+
