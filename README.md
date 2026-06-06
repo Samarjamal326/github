@@ -532,3 +532,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CI/CD automates deployment workflows.
 
+
+---
+## 2026-06-06 18:51:11
+
+> Merge Sort runs in O(n log n).
+
