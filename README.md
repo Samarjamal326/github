@@ -538,3 +538,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Merge Sort runs in O(n log n).
 
+
+---
+## 2026-06-06 18:51:13
+
+> Optimization should follow correctness.
+
