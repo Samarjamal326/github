@@ -496,3 +496,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Web: Minify your CSS and JS for faster load times.
 
+
+---
+## 2026-06-06 14:50:07
+
+> Optimization should follow correctness.
+
