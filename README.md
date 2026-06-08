@@ -568,3 +568,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Grid is powerful for 2D layouts.
 
+
+---
+## 2026-06-08 13:17:59
+
+> CSS: Flexbox simplifies alignment problems.
+
