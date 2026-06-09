@@ -610,3 +610,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > UI/UX: Consistent spacing makes apps feel more professional.
 
+
+---
+## 2026-06-09 12:18:09
+
+> ReLU reduces vanishing gradient issues.
+
