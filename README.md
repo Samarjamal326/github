@@ -634,3 +634,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-06-09 16:10:59
+
+> CSS: rem units improve responsive design.
+
