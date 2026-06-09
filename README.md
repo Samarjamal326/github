@@ -592,3 +592,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > JWT tokens help implement stateless authentication.
 
+
+---
+## 2026-06-09 10:24:25
+
+> Queues use FIFO ordering.
+
