@@ -580,3 +580,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Queues use FIFO ordering.
 
+
+---
+## 2026-06-09 10:24:21
+
+> Express.js: Route parameters simplify APIs.
+
