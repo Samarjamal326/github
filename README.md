@@ -622,3 +622,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Node.js: Middleware executes during request lifecycles.
 
+
+---
+## 2026-06-09 16:10:55
+
+> JWT tokens help implement stateless authentication.
+
