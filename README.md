@@ -616,3 +616,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > ReLU reduces vanishing gradient issues.
 
+
+---
+## 2026-06-09 12:18:11
+
+> Node.js: Middleware executes during request lifecycles.
+
