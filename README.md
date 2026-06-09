@@ -598,3 +598,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Queues use FIFO ordering.
 
+
+---
+## 2026-06-09 10:24:27
+
+> CSS: Media queries help create mobile-first layouts.
+
