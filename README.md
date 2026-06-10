@@ -670,3 +670,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > JavaScript: Event delegation boosts performance.
 
+
+---
+## 2026-06-10 19:56:37
+
+> ReLU reduces vanishing gradient issues.
+
