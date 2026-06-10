@@ -652,3 +652,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Debugging is a critical engineering skill.
 
+
+---
+## 2026-06-10 12:39:09
+
+> HTML: Semantic tags improve SEO and accessibility.
+
