@@ -694,3 +694,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Cloud: AWS S3 is ideal for static object storage.
 
+
+---
+## 2026-06-11 20:00:41
+
+> Express.js: Route parameters simplify APIs.
+
