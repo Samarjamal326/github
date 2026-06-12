@@ -730,3 +730,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Media queries help create mobile-first layouts.
 
+
+---
+## 2026-06-12 19:33:16
+
+> Transformers rely heavily on attention mechanisms.
+
