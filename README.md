@@ -736,3 +736,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Transformers rely heavily on attention mechanisms.
 
+
+---
+## 2026-06-12 19:33:18
+
+> Input validation prevents many attacks.
+
