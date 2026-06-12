@@ -712,3 +712,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Overfitting reduces real-world model performance.
 
+
+---
+## 2026-06-12 12:35:03
+
+> Linux: 'grep' is incredibly powerful for text search.
+
