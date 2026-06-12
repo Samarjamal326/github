@@ -706,3 +706,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-06-12 12:35:01
+
+> Overfitting reduces real-world model performance.
+
