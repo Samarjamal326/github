@@ -760,3 +760,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Flexbox simplifies alignment problems.
 
+
+---
+## 2026-06-13 11:25:36
+
+> JWT tokens help implement stateless authentication.
+
