@@ -790,3 +790,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > REST APIs should use meaningful HTTP methods.
 
+
+---
+## 2026-06-13 18:55:36
+
+> JavaScript: Spread operators make copying arrays easier.
+
