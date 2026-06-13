@@ -784,3 +784,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-06-13 11:25:45
+
+> REST APIs should use meaningful HTTP methods.
+
