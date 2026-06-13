@@ -748,3 +748,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Dictionaries provide fast key-value access.
 
+
+---
+## 2026-06-13 09:47:13
+
+> HashMaps provide near O(1) lookups.
+
