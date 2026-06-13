@@ -754,3 +754,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HashMaps provide near O(1) lookups.
 
+
+---
+## 2026-06-13 09:47:15
+
+> CSS: Flexbox simplifies alignment problems.
+
