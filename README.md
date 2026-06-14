@@ -802,3 +802,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > REST APIs should use meaningful HTTP methods.
 
+
+---
+## 2026-06-14 10:15:52
+
+> CSS: rem units improve responsive design.
+
