@@ -844,3 +844,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Media queries help create mobile-first layouts.
 
+
+---
+## 2026-06-14 18:55:04
+
+> Linux: 'grep' is incredibly powerful for text search.
+
