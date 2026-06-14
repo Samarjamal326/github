@@ -832,3 +832,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Git commits should be small and meaningful.
 
+
+---
+## 2026-06-14 15:12:38
+
+> Tokenization is fundamental in NLP pipelines.
+
