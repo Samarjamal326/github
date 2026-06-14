@@ -838,3 +838,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Tokenization is fundamental in NLP pipelines.
 
+
+---
+## 2026-06-14 18:55:02
+
+> CSS: Media queries help create mobile-first layouts.
+
