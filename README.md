@@ -808,3 +808,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: rem units improve responsive design.
 
+
+---
+## 2026-06-14 10:15:54
+
+> JavaScript: async/await improves readability.
+
