@@ -814,3 +814,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > JavaScript: async/await improves readability.
 
+
+---
+## 2026-06-14 15:12:32
+
+> Bash: Use 'set -e' to stop a script on errors.
+
