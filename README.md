@@ -862,3 +862,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Queues use FIFO ordering.
 
+
+---
+## 2026-06-15 12:54:34
+
+> HashMaps provide near O(1) lookups.
+
