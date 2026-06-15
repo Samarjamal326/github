@@ -886,3 +886,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HashMaps provide near O(1) lookups.
 
+
+---
+## 2026-06-15 15:25:40
+
+> JavaScript: Debouncing prevents excessive function calls.
+
