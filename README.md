@@ -898,3 +898,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Security: Keep dependencies updated to avoid vulnerabilities.
 
+
+---
+## 2026-06-15 18:00:16
+
+> React: useEffect handles side effects.
+
