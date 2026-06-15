@@ -856,3 +856,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-06-15 12:54:32
+
+> Queues use FIFO ordering.
+
