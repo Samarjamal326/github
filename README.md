@@ -946,3 +946,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Grid is powerful for 2D layouts.
 
+
+---
+## 2026-06-16 18:07:48
+
+> Never store passwords in plain text.
+
