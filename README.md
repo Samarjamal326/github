@@ -958,3 +958,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Readable code scales better in teams.
 
+
+---
+## 2026-06-16 20:30:34
+
+> MongoDB stores data in flexible BSON documents.
+
