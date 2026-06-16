@@ -910,3 +910,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Use loading='lazy' for better image performance.
 
+
+---
+## 2026-06-16 11:57:42
+
+> MongoDB stores data in flexible BSON documents.
+
