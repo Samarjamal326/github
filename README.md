@@ -964,3 +964,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > MongoDB stores data in flexible BSON documents.
 
+
+---
+## 2026-06-16 20:30:36
+
+> Overfitting reduces real-world model performance.
+
