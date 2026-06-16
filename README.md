@@ -916,3 +916,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > MongoDB stores data in flexible BSON documents.
 
+
+---
+## 2026-06-16 11:57:44
+
+> CSS: rem units improve responsive design.
+
