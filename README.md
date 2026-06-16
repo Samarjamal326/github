@@ -904,3 +904,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: useEffect handles side effects.
 
+
+---
+## 2026-06-16 11:57:40
+
+> HTML: Use loading='lazy' for better image performance.
+
