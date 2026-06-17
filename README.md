@@ -982,3 +982,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Always include alt attributes in images.
 
+
+---
+## 2026-06-17 12:58:23
+
+> Queues use FIFO ordering.
+
