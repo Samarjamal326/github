@@ -976,3 +976,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Readable code scales better in teams.
 
+
+---
+## 2026-06-17 11:23:18
+
+> HTML: Always include alt attributes in images.
+
