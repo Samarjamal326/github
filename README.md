@@ -994,3 +994,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CI/CD automates deployment workflows.
 
+
+---
+## 2026-06-18 11:02:19
+
+> Cloud: AWS S3 is ideal for static object storage.
+
