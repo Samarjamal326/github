@@ -1012,3 +1012,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Web: Minify your CSS and JS for faster load times.
 
+
+---
+## 2026-06-18 12:33:00
+
+> REST APIs should use meaningful HTTP methods.
+
