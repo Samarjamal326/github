@@ -1072,3 +1072,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Merge Sort runs in O(n log n).
 
+
+---
+## 2026-06-19 16:12:04
+
+> Virtual environments isolate dependencies.
+
