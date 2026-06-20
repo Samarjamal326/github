@@ -1102,3 +1102,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > ReLU reduces vanishing gradient issues.
 
+
+---
+## 2026-06-20 11:26:22
+
+> React: Keys help React identify changed list items.
+
