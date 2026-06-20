@@ -1132,3 +1132,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: Keys help React identify changed list items.
 
+
+---
+## 2026-06-20 18:58:51
+
+> HashMaps provide near O(1) lookups.
+
