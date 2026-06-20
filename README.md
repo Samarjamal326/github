@@ -1084,3 +1084,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: useEffect handles side effects.
 
+
+---
+## 2026-06-20 11:26:16
+
+> JavaScript: async/await improves readability.
+
