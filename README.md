@@ -1126,3 +1126,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Input validation prevents many attacks.
 
+
+---
+## 2026-06-20 18:58:49
+
+> React: Keys help React identify changed list items.
+
