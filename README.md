@@ -1150,3 +1150,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: Virtual DOM improves rendering efficiency.
 
+
+---
+## 2026-06-21 11:57:46
+
+> React: Keys help React identify changed list items.
+
