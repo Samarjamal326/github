@@ -1168,3 +1168,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > React: Keys help React identify changed list items.
 
+
+---
+## 2026-06-21 15:14:27
+
+> Cloud: AWS S3 is ideal for static object storage.
+
