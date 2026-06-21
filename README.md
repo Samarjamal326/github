@@ -1138,3 +1138,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HashMaps provide near O(1) lookups.
 
+
+---
+## 2026-06-21 10:22:39
+
+> HTML: Always include alt attributes in images.
+
