@@ -1162,3 +1162,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > TypeScript: Interfaces improve code predictability.
 
+
+---
+## 2026-06-21 15:14:25
+
+> React: Keys help React identify changed list items.
+
