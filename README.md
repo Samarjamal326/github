@@ -1144,3 +1144,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Always include alt attributes in images.
 
+
+---
+## 2026-06-21 10:22:41
+
+> React: Virtual DOM improves rendering efficiency.
+
