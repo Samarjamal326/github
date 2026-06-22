@@ -1174,3 +1174,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Cloud: AWS S3 is ideal for static object storage.
 
+
+---
+## 2026-06-22 12:38:05
+
+> API: Rate limiting prevents abuse of your services.
+
