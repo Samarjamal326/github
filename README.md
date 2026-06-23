@@ -1204,3 +1204,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Feature engineering often matters more than model complexity.
 
+
+---
+## 2026-06-23 10:23:53
+
+> CSS: rem units improve responsive design.
+
