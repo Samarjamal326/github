@@ -1198,3 +1198,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Dictionaries provide fast key-value access.
 
+
+---
+## 2026-06-23 10:23:51
+
+> Feature engineering often matters more than model complexity.
+
