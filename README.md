@@ -1294,3 +1294,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > TypeScript: Interfaces improve code predictability.
 
+
+---
+## 2026-06-25 15:44:07
+
+> JWT tokens help implement stateless authentication.
+
