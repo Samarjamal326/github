@@ -1306,3 +1306,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Binary Search requires sorted arrays.
 
+
+---
+## 2026-06-25 15:44:11
+
+> HTML: Semantic tags improve SEO and accessibility.
+
