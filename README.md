@@ -1270,3 +1270,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-06-25 09:58:22
+
+> ReLU reduces vanishing gradient issues.
+
