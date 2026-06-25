@@ -1300,3 +1300,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > JWT tokens help implement stateless authentication.
 
+
+---
+## 2026-06-25 15:44:09
+
+> Binary Search requires sorted arrays.
+
