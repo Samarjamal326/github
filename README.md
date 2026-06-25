@@ -1276,3 +1276,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > ReLU reduces vanishing gradient issues.
 
+
+---
+## 2026-06-25 11:58:34
+
+> List comprehensions reduce boilerplate code.
+
