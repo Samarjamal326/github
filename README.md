@@ -1330,3 +1330,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Security: Keep dependencies updated to avoid vulnerabilities.
 
+
+---
+## 2026-06-26 15:29:17
+
+> Never store passwords in plain text.
+
