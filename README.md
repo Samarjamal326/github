@@ -1342,3 +1342,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Security: Keep dependencies updated to avoid vulnerabilities.
 
+
+---
+## 2026-06-27 14:50:52
+
+> Overfitting reduces real-world model performance.
+
