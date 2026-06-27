@@ -1360,3 +1360,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > UI/UX: Consistent spacing makes apps feel more professional.
 
+
+---
+## 2026-06-27 14:50:58
+
+> Never store passwords in plain text.
+
