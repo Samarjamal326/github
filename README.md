@@ -1372,3 +1372,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Meta tags improve discoverability.
 
+
+---
+## 2026-06-28 11:17:17
+
+> Bash: Use 'set -e' to stop a script on errors.
+
