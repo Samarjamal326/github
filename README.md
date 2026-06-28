@@ -1366,3 +1366,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Never store passwords in plain text.
 
+
+---
+## 2026-06-28 09:48:24
+
+> HTML: Meta tags improve discoverability.
+
