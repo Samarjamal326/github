@@ -1378,3 +1378,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Bash: Use 'set -e' to stop a script on errors.
 
+
+---
+## 2026-06-28 11:17:19
+
+> CSS: rem units improve responsive design.
+
