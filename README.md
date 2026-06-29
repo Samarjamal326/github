@@ -1408,3 +1408,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Flexbox simplifies alignment problems.
 
+
+---
+## 2026-06-29 13:17:35
+
+> JavaScript: Closures retain access to outer scope variables.
+
