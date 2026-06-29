@@ -1432,3 +1432,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Data quality is crucial in machine learning.
 
+
+---
+## 2026-06-29 16:40:11
+
+> REST APIs should use meaningful HTTP methods.
+
