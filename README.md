@@ -1396,3 +1396,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Grid is powerful for 2D layouts.
 
+
+---
+## 2026-06-29 11:49:09
+
+> Bash: Use 'set -e' to stop a script on errors.
+
