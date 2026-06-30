@@ -1438,3 +1438,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > REST APIs should use meaningful HTTP methods.
 
+
+---
+## 2026-06-30 10:19:36
+
+> Transformers rely heavily on attention mechanisms.
+
