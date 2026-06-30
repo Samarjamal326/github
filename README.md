@@ -1444,3 +1444,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Transformers rely heavily on attention mechanisms.
 
+
+---
+## 2026-06-30 10:19:38
+
+> Binary Search requires sorted arrays.
+
