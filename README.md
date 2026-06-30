@@ -1450,3 +1450,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Binary Search requires sorted arrays.
 
+
+---
+## 2026-06-30 15:37:30
+
+> MongoDB stores data in flexible BSON documents.
+
