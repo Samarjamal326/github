@@ -1462,3 +1462,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTTPS encrypts client-server communication.
 
+
+---
+## 2026-07-01 10:34:27
+
+> Transformers rely heavily on attention mechanisms.
+
