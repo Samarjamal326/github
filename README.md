@@ -1498,3 +1498,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Media queries help create mobile-first layouts.
 
+
+---
+## 2026-07-01 15:47:55
+
+> MongoDB stores data in flexible BSON documents.
+
