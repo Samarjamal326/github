@@ -1546,3 +1546,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Virtual environments isolate dependencies.
 
+
+---
+## 2026-07-02 15:24:43
+
+> React: useEffect handles side effects.
+
