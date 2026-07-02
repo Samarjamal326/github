@@ -1534,3 +1534,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > HTML: Use loading='lazy' for better image performance.
 
+
+---
+## 2026-07-02 11:44:06
+
+> HashMaps provide near O(1) lookups.
+
