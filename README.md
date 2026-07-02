@@ -1516,3 +1516,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > CSS: Flexbox simplifies alignment problems.
 
+
+---
+## 2026-07-02 09:48:28
+
+> Bash: Use 'set -e' to stop a script on errors.
+
