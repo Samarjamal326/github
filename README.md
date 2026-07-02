@@ -1528,3 +1528,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Binary Search requires sorted arrays.
 
+
+---
+## 2026-07-02 11:44:04
+
+> HTML: Use loading='lazy' for better image performance.
+
