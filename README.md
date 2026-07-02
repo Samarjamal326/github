@@ -1522,3 +1522,9 @@ A daily log of web development tips, tricks, and concepts — automatically adde
 
 > Bash: Use 'set -e' to stop a script on errors.
 
+
+---
+## 2026-07-02 11:44:02
+
+> Binary Search requires sorted arrays.
+
